@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-background: #FFF;
+  --color-text: #828282;
+  --color-text-secondary: #3F3D56;
+
+  --color-primary: #EE24FF;
+  --color-line: #ECEFF2;
+}
+
+body {
+  min-height: 100vh;
+
+  font: 400 15px 'Open Sans', sans-serif;
+  line-height: 22px;
+  color: var(--color-text);
+
+  background-image: url(images/wave.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  overflow-x: hidden;
+}
+
+.page {
+  width: 626px;
+  height: 100vh;
+
+  margin: 0 auto;
+  text-align: center;
+}
+
+main {
+  padding: 64px 0;
+}
+
+main h1 {
+  font: 500 32px 'Dosis', sans-serif;
+  line-height: normal;
+  color: var(--color-text-secondary);
+
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+main h1 strong {
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+main p {
+  width: 540px;
+  margin: 0 auto;
+}
+
+main p + p {
+  margin-top: 32px;
+}
+
+main p strong {
+  color: var(--color-text-secondary);
+}
+
+main p strong:nth-of-type(2) {
+  color: var(--color-text);
+}
+
+.line {
+  width: 391px;
+  margin: 0 auto 16px;
+
+  border-top: 2px solid var(--color-line);
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 42px;
+
+  list-style: none;
+}
+
+nav a {
+  font: 700 15px 'Open Sans', sans-serif;
+  color: var(--color-text-secondary);
+  line-height: 22px;
+  text-decoration: none;
+}
